@@ -1,0 +1,10 @@
+{% extends 'products/base.html' %}
+
+{% block content %}
+<p>Выберите курс</p>
+<ul>
+    {% for prod in list %}
+        <li><a href="{{ prod.get_absolute_url }}">{{prod.name}}({{prod.num_lessons.count}})</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

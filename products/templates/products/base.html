@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+</head>
+<body>
+<h1>Учебная программа</h1>
+<style>
+    .button {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    a {
+        color: #0000EE;
+        text-decoration: none;
+    }
+</style>
+
+<button type="submit"><a href="{% url 'products:index' %}">В начало</a></button>
+<button type="submit"><a href="{% url 'products:products-form' %}">Добавить курс</a></button>
+<button type="submit"><a href="{% url 'products:lesson-form' %}">Добавить урок</a></button>
+<button type="submit"><a href="{% url 'products:lesson-list' %}">Список уроков</a></button>
+
+{% block content %}
+{% endblock content %}
+
+</body>
+</html>

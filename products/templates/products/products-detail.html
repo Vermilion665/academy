@@ -1,0 +1,13 @@
+{% extends 'products/base.html' %}
+
+{% block content %}
+
+<h2>{{products.name}}</h2>
+
+<ul>
+    <p>Автор: {{products.author}}</p>
+    <p>Дата начала: {{products.start_date}}</p>
+    <p>Цена: {{products.price}}</p>
+</ul>
+
+{% endblock %}
